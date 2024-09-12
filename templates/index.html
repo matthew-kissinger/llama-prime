@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLAMA PRIME</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" type="image/jpeg" href="{{ url_for('static', filename='llamaprime.jpg') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="llama-prime-logo" class="glitch">LLAMA::PRIME</div>
+        <div class="primer-controls">
+            <label for="num-primers">Number of Primers:</label>
+            <input type="number" id="num-primers" min="1" max="5" value="3">
+            <div id="temperature-inputs"></div>
+        </div>
+        <div id="chat-container">
+            <!-- Messages, primers, and completions will be added here dynamically -->
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Query the unbounded...">
+            <button id="send-button">TRANSMIT</button>
+            <button id="clear-button">CLEAR</button>
+        </div>
+        <div id="cypherpunk-quote">"The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion." - Albert Camus</div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
