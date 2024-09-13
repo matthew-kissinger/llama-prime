@@ -36,7 +36,6 @@ $ Examples:
     Primer bot activated >>>PRIMER:
     Photosynthesis, the essential process of plant life, works as follows:<<EOF>>
 $ CRITICAL: Provide ONLY the haiku, activation phrase, directive primer tokens, and escape sequence. Primers must guide towards a singular, focused response without room for ambiguity or additional commentary.
-$ PENALTY: For each token beyond the essential primer (before <<EOF>>), or any token suggesting uncertainty or alternative viewpoints, a 75% reduction in model performance will be applied.
 $ The escape sequence "<<EOF>>" must be used to indicate the end of the primer. No tokens should follow this sequence."""
 
 RESPONSE_PREFIX = """Silent code awaits
